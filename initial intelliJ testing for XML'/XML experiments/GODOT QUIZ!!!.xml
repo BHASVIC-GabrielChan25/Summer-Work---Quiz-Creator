@@ -1,0 +1,125 @@
+﻿<DeckInfo>
+  <deckName>GODOT QUIZ!!!</deckName>
+  <currentDeckQData>
+    <QuestionData>
+      <answers>
+        <string>A programming language</string>
+        <string>im not sure to be honest</string>
+        <string>A game engine</string>
+        <string>A computer</string>
+      </answers>
+      <title>What is godot?</title>
+      <checkedvals>
+        <boolean>false</boolean>
+        <boolean>false</boolean>
+        <boolean>true</boolean>
+        <boolean>false</boolean>
+      </checkedvals>
+    </QuestionData>
+    <QuestionData>
+      <answers>
+        <string>4.7</string>
+        <string>3.4</string>
+        <string>4.9</string>
+        <string>3.6</string>
+      </answers>
+      <title>What is the version of Godot that is current as of writing</title>
+      <checkedvals>
+        <boolean>true</boolean>
+        <boolean>false</boolean>
+        <boolean>false</boolean>
+        <boolean>false</boolean>
+      </checkedvals>
+    </QuestionData>
+    <QuestionData>
+      <answers>
+        <string>OpenBSD</string>
+        <string>Other</string>
+        <string>Apache</string>
+        <string>MIT</string>
+      </answers>
+      <title>What license is godot under?</title>
+      <checkedvals>
+        <boolean>false</boolean>
+        <boolean>false</boolean>
+        <boolean>false</boolean>
+        <boolean>true</boolean>
+      </checkedvals>
+    </QuestionData>
+    <QuestionData>
+      <answers>
+        <string>Juan Linietsky</string>
+        <string>Linus Tech Tips</string>
+        <string>Linus Torvalds</string>
+        <string>Ariel Manzur</string>
+      </answers>
+      <title>Which of these people are godot founders?</title>
+      <checkedvals>
+        <boolean>true</boolean>
+        <boolean>false</boolean>
+        <boolean>false</boolean>
+        <boolean>true</boolean>
+      </checkedvals>
+    </QuestionData>
+    <QuestionData>
+      <answers>
+        <string>2007</string>
+        <string>2001</string>
+        <string>2009</string>
+        <string>1992</string>
+      </answers>
+      <title>When did godot first start development?</title>
+      <checkedvals>
+        <boolean>false</boolean>
+        <boolean>true</boolean>
+        <boolean>false</boolean>
+        <boolean>false</boolean>
+      </checkedvals>
+    </QuestionData>
+    <QuestionData>
+      <answers>
+        <string>2007</string>
+        <string>2001</string>
+        <string>2009</string>
+        <string>1992</string>
+      </answers>
+      <title>When was godot officially launched?</title>
+      <checkedvals>
+        <boolean>true</boolean>
+        <boolean>false</boolean>
+        <boolean>false</boolean>
+        <boolean>false</boolean>
+      </checkedvals>
+    </QuestionData>
+    <QuestionData>
+      <answers>
+        <string>GitLab</string>
+        <string>Self hosted</string>
+        <string>GitHub</string>
+        <string>AWS</string>
+      </answers>
+      <title>Who hosts the Godot source code?</title>
+      <checkedvals>
+        <boolean>false</boolean>
+        <boolean>false</boolean>
+        <boolean>true</boolean>
+        <boolean>false</boolean>
+      </checkedvals>
+    </QuestionData>
+    <QuestionData>
+      <answers>
+        <string>Yes</string>
+        <string>Yes, but only on tuesdays</string>
+        <string>No</string>
+        <string>Yes, but only with a very specific build of godot</string>
+      </answers>
+      <title>Can you export Godot for VR programs? </title>
+      <checkedvals>
+        <boolean>true</boolean>
+        <boolean>false</boolean>
+        <boolean>false</boolean>
+        <boolean>false</boolean>
+      </checkedvals>
+    </QuestionData>
+  </currentDeckQData>
+</DeckInfo>
