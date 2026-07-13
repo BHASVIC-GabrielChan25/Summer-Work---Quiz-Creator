@@ -11,7 +11,7 @@ public class Main {
         if (option.equals( "2")) {
             System.out.println("Enter quiz name (excluding .xml)");
             String fileName = scan.nextLine();
-            new ReadXML().readFile(fileName+".xml");
+            new ReadXML().readFile("Quizzes\\"+fileName+".xml");
         }
         else if (option.equals("1"))
         {

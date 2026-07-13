@@ -59,7 +59,7 @@ public class WriteXML {
             }
         }
 
-        try (FileOutputStream output = new FileOutputStream(title+".xml"))
+        try (FileOutputStream output = new FileOutputStream("Quizzes\\"+title+".xml"))
         {
             writeXml(doc, output);
         }
