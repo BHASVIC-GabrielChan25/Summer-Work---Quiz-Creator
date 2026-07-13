@@ -23,7 +23,6 @@ public class WriteXML {
 
 
 
-
         Element QDeck = doc.createElement("QuestionDeck");
         Element rootElem = QDeck;
         doc.appendChild(rootElem);
@@ -80,7 +79,7 @@ public class WriteXML {
 
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
         Transformer transformer = transformerFactory.newTransformer();
-
+        //make it pretty
         transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 
         DOMSource source = new DOMSource(doc);
