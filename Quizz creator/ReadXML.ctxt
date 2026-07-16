@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ReadXML
+comment1.params=filePath
+comment1.target=void\ readFile(java.lang.String)
+comment2.params=filePath
+comment2.target=org.w3c.dom.Document\ getQuiz(java.lang.String)
+numComments=3

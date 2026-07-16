@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=WriteXML
+comment1.params=
+comment1.target=void\ setUp()
+comment2.params=pTitle
+comment2.target=void\ createXML(java.lang.String)
+comment3.params=Pquestion\ answerA\ answerB\ answerC\ answerD
+comment3.target=void\ addQuestion(Question,\ Answer,\ Answer,\ Answer,\ Answer)
+comment4.params=
+comment4.target=void\ finishXML()
+comment5.params=
+comment5.target=void\ test()
+comment6.params=doc\ output
+comment6.target=void\ writeXml(org.w3c.dom.Document,\ java.io.OutputStream)
+numComments=7

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<QuestionDeck Title="Crazy">
+    <Questions>
+        <Question>
+            Crazy?
+            <Answer Correct="true">I was crazy once</Answer>
+            <Answer Correct="false">e</Answer>
+            <Answer Correct="false">d</Answer>
+            <Answer Correct="false">s</Answer>
+        </Question>
+        <Question>
+            They locked me in a room
+            <Answer Correct="false">w</Answer>
+            <Answer Correct="false">s</Answer>
+            <Answer Correct="true">A rubber room</Answer>
+            <Answer Correct="false">d</Answer>
+        </Question>
+        <Question>
+            A rubber room filled with
+            <Answer Correct="true">rats</Answer>
+            <Answer Correct="false">nats</Answer>
+            <Answer Correct="false">cats</Answer>
+            <Answer Correct="false">bats</Answer>
+        </Question>
+        <Question>
+            and rats...
+            <Answer Correct="false">make me happy</Answer>
+            <Answer Correct="true">make me crazy</Answer>
+            <Answer Correct="false">boohoo</Answer>
+            <Answer Correct="false">make me sad</Answer>
+        </Question>
+        <Question>
+            crazy?
+            <Answer Correct="false">no</Answer>
+            <Answer Correct="false">no</Answer>
+            <Answer Correct="false">HELPHELPHELPHELKP</Answer>
+            <Answer Correct="true">i was crazy once...</Answer>
+        </Question>
+    </Questions>
+</QuestionDeck>
