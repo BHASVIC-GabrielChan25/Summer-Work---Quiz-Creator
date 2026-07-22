@@ -40,6 +40,9 @@ public class ButtonCreate extends Actor
     public void setUpQuiz() throws ParserConfigurationException
     {
         name = JOptionPane.showInputDialog("Enter the title of the quiz");
+        if(name != null)
+        {
         write.createXML(name);
+    }
     }
 }

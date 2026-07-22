@@ -1,7 +1,17 @@
 #BlueJ class context
 comment0.target=ReadXML
 comment1.params=filePath
-comment1.target=void\ readFile(java.lang.String)
+comment1.target=ReadXML(java.lang.String)
 comment2.params=filePath
 comment2.target=org.w3c.dom.Document\ getQuiz(java.lang.String)
-numComments=3
+comment3.params=questionNumber
+comment3.target=java.lang.String\ getQuestion(int)
+comment4.params=questionNumber\ answerNumber
+comment4.target=java.lang.String\ getAnswerContent(int,\ int)
+comment5.params=questionNumber\ answerNumber
+comment5.target=java.lang.Boolean\ getAnswerCorrect(int,\ int)
+comment6.params=
+comment6.target=int\ getNumOfQuestions()
+comment7.params=filePath
+comment7.target=void\ test(java.lang.String)
+numComments=8

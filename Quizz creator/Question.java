@@ -6,16 +6,25 @@ import javax.swing.JOptionPane;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Question extends TextBoxWrite
+public class Question extends TextBox
 {
     private String question = null;
     private GreenfootImage image = null;
     private int questionNumber;
-    public Question(int number)
+    private ReadXML readXML;
+    public Question(int number, String mode)
     {
         super("Insert Question", 70,Color.BLACK, Color.WHITE, Color.BLACK);
         questionNumber = number;
-
+        this.mode = mode;
+        this.readXML = new ReadXML(null);
+    }
+    public Question(int number, String mode, ReadXML readXML)
+    {
+        super("Insert Question", 70,Color.BLACK, Color.WHITE, Color.BLACK);
+        questionNumber = number;
+        this.mode = mode;
+        this.readXML = readXML;
     }
     /**
      * Act - do whatever the Question wants to do. This method is called whenever
@@ -23,12 +32,26 @@ public class Question extends TextBoxWrite
      */
     public void act()
     {
-        if (Greenfoot.mouseClicked(this))
+        if (mode.equals("WRITE"))   
         {
-            question = JOptionPane.showInputDialog("Enter question:");
+            if (Greenfoot.mouseClicked(this))
+            {
+                question = JOptionPane.showInputDialog("Enter question:");
+            }
+            update();
         }
-        update();
+        else if (mode.equals("READ"))
+        {
+            question = readXML.getQuestion(questionNumber);
+            update();
+        }
+        else
+        {
+            Greenfoot.stop();
+            System.out.println("Something is wrong with the mode IN QUESTION");             
+        }
     }
+    
     
     public void update()
     {

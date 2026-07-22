@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class TextBox extends Actor
 {
     protected GreenfootImage image = null;
+    protected String mode = null;
     /**
      * Act - do whatever the TextBox wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.

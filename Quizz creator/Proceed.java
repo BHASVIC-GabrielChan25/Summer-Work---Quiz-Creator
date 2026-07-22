@@ -8,36 +8,39 @@ import javax.swing.JOptionPane;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class ProceedCreating extends TextBoxWrite
+public class Proceed extends TextBox
 {
     WriteXML write;
-    public ProceedCreating(WriteXML writeXML)
+    int choice;
+    public Proceed(WriteXML writeXML)
     {
         super("Proceed", 35,Color.BLACK, Color.WHITE, Color.BLACK);
         this.write = writeXML;
     }
+
     /**
      * Act - do whatever the ProceedCreating wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
     {
-        if(Greenfoot.mouseClicked(this))
-        {
-            
-            Object[] options= {"OK", "CANCEL"};  
-            JOptionPane.showOptionDialog(null, "Click OK to continue to the next question." , "Warning", JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
+ 
+    if(Greenfoot.mouseClicked(this))
+    {        
+        Object[] options= {"OK", "CANCEL"};  
+        choice = JOptionPane.showOptionDialog(null, "Click OK to continue to the next question." , "Warning", JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
+        if (choice == 0){
             if (emptyCheck())
             {   
                 saveQuestion(); 
                 Greenfoot.setWorld(new CreatingQuiz(getWorld().getObjects(Question.class).get(0).getQuestionNum()+ 1,write));
-
             }
             else
             {
                 JOptionPane.showMessageDialog(null, "There is an empty field!");
             }
-        }
+    }
+    }
     }
     
     public boolean emptyCheck()

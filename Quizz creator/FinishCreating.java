@@ -9,9 +9,10 @@ import java.io.IOException;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class FinishCreating extends TextBoxWrite
+public class FinishCreating extends TextBox
 {
     WriteXML write;
+    int choice;
     public FinishCreating(WriteXML writeXML)
     {
         super("Finish creating", 35,Color.BLACK, Color.WHITE, Color.BLACK);
@@ -27,30 +28,33 @@ public class FinishCreating extends TextBoxWrite
         {
             
             Object[] options= {"Yes", "CANCEL"};  
-            JOptionPane.showOptionDialog(null, "Are you going to finish the quiz?" , "Warning", JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
-            if (emptyCheck())
-            {   
-                try
-                {
-                    saveQuestionDeck();
-                }
-                catch (TransformerException e)
-                {
-                    System.out.println("Transformer error");
-                    Greenfoot.stop();
-                } 
-                catch (IOException ie)
-                {
-                    System.out.println("IO error");
-                    ie.printStackTrace();
-                    Greenfoot.stop();
-                }
-                Greenfoot.setWorld(new MainMenu());
-        
-            }
-            else
+            choice = JOptionPane.showOptionDialog(null, "Are you going to finish the quiz?" , "Warning", JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
+            if(choice == 0)
             {
-                JOptionPane.showMessageDialog(null, "There is an empty field!");
+                if (emptyCheck())
+                {   
+                    try
+                    {
+                        saveQuestionDeck();
+                    }
+                    catch (TransformerException e)
+                    {
+                        System.out.println("Transformer error");
+                        Greenfoot.stop();
+                    } 
+                    catch (IOException ie)
+                    {
+                        System.out.println("IO error");
+                        ie.printStackTrace();
+                        Greenfoot.stop();
+                    }
+                    Greenfoot.setWorld(new MainMenu());
+            
+                }
+                else
+                {
+                    JOptionPane.showMessageDialog(null, "There is an empty field!");
+                }
             }
         }
     }
